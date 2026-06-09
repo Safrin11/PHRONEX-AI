@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+.vscode/
+
+instance/
+
+database.db
+
+students.txt
+
+.env
