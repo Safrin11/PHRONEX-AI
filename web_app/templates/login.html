@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduSphere Login</title>
+</head>
+
+<body>
+
+    <h1>EduSphere 🚀</h1>
+
+    <form method="POST">
+
+        <label>Username:</label>
+        <input type="text" name="username" required>
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <h3 style="color:red;">
+        {{ error }}
+    </h3>
+<br>
+<a href="/register">Create New Account</a>
+
+</body>
+</html>

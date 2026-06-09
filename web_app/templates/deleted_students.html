@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        Deleted Students
+    </title>
+
+</head>
+
+<body>
+
+    <h1>
+        Deleted Students
+    </h1>
+
+    <table border="1">
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Name</th>
+
+            <th>Department</th>
+
+            <th>Action</th>
+
+        </tr>
+
+        {% for s in students %}
+
+        <tr>
+
+            <td>{{ s.student_id }}</td>
+
+            <td>{{ s.name }}</td>
+
+            <td>{{ s.department }}</td>
+
+            <td>
+
+                <a href="/restore_student/{{ s.id }}">
+                    Restore
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <br>
+
+    <a href="/dashboard">
+        Back to Dashboard
+    </a>
+
+</body>
+
+</html>

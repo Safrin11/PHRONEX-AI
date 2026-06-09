@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Report</title>
+</head>
+
+<body>
+
+    <h1>Student Report</h1>
+
+    <hr>
+
+    <h2>{{ student.name }}</h2>
+
+    <p>ID: {{ student.student_id }}</p>
+
+    <p>Department: {{ student.department }}</p>
+
+    <hr>
+
+    {% for s in subjects %}
+
+        <h3>{{ s.subject_name }}</h3>
+
+        <p>Mark: {{ s.mark }}</p>
+
+        <p>Status: {{ s.status }}</p>
+
+        <hr>
+
+    {% endfor %}
+
+    <h2>Total: {{ total }}</h2>
+
+    <h2>Average: {{ average }}</h2>
+
+    <h2>Result: {{ result }}</h2>
+
+    <br>
+
+    <a href="/dashboard">
+        Back to Dashboard
+    </a>
+
+</body>
+</html>

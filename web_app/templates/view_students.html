@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Students</title>
+</head>
+<body>
+    <h1>All Students</h1>
+    <hr>
+    {% for s in students %}
+
+        <h3>{{ s.student_id }}</h3>
+
+        <p>Name: {{ s.name }}</p>
+
+        <p>Department: {{ s.department }}</p>
+        <a href="/report/{{ s.id }}">
+            View Report
+        </a>
+        <a href="/update_student/{{ s.id }}">
+            Update
+        </a>
+        br><br>
+        <a href="/delete_student/{{ s.id }}">
+            Delete
+        </a>
+        <hr>
+    {% endfor %}
+    
+    <a href="/dashboard">
+        Back to Dashboard
+    </a>
+</body>
+</html>

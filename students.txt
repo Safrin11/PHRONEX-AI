@@ -1,0 +1,4 @@
+ad120|safrin|aids|python:91,java:68,dsa:78
+ad121|sivuu|it|khu:78,python:90,iuy:45
+ad122|abinaya|cse|python:87,iuy:56,khu:78
+ad123|omana|aids|java:98,kwh:56,iuy:32,python:86

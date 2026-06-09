@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Add Student</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Add Student 🚀</h1>
+
+    <form method="POST">
+
+        <input type="text"
+               name="student_id"
+               placeholder="Student ID"
+               required>
+
+        <input type="text"
+               name="name"
+               placeholder="Student Name"
+               required>
+
+        <input type="text"
+               name="department"
+               placeholder="Department"
+               required>
+
+        <hr>
+
+        <h3>Subjects</h3>
+
+        <div id="subjects">
+
+            <div class="subject-row">
+
+                <input type="text"
+                       name="subject"
+                       placeholder="Subject Name">
+
+                <input type="number"
+                       name="mark"
+                       placeholder="Mark">
+
+            </div>
+
+        </div>
+
+        <button type="button"
+                onclick="addSubject()">
+
+            + Add More Subject
+
+        </button>
+
+        <br><br>
+
+        <button type="submit">
+
+            Save Student
+
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/dashboard">
+
+        Back to Dashboard
+
+    </a>
+
+</div>
+
+<script>
+
+function addSubject() {
+
+    let div = document.createElement("div")
+
+    div.classList.add("subject-row")
+
+    div.innerHTML = `
+
+        <input type="text"
+               name="subject"
+               placeholder="Subject Name">
+
+        <input type="number"
+               name="mark"
+               placeholder="Mark">
+
+    `
+
+    document.getElementById("subjects")
+            .appendChild(div)
+}
+
+</script>
+
+</body>
+</html>
