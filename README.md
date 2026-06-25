@@ -399,7 +399,7 @@ Risk Intelligence
   
 ---
 
-# 🧩 Technology Stack
+# Technology Stack
 
 | Layer                   | Technology                           |
 | ----------------------- | ------------------------------------ |
